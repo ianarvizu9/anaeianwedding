@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main className="min-h-screen">
 
-      <div className="sticky top-0 min-h-[70vh] overflow-hidden z-0">
+      <div className="sticky top-0 min-h-[80vh] overflow-hidden z-0">
         <div className="absolute top-0 w-full flex justify-center">
           <div className="w-full max-w-md">
             <Image
