@@ -5,9 +5,10 @@ import { useState } from "react";
 interface FlipCardProps {
   frontImage: string;
   backImage: string;
+  locationUrl: string;
 }
 
-export default function FlipCard({ frontImage, backImage }: FlipCardProps) {
+export default function FlipCard({ frontImage, backImage, locationUrl }: FlipCardProps) {
   const [flipped, setFlipped] = useState(false);
 
   return (
@@ -45,11 +46,11 @@ export default function FlipCard({ frontImage, backImage }: FlipCardProps) {
             />
 
             <a
-                href="https://maps.app.goo.gl/hLhQA6gAuD45uR3p9"
+                href={locationUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={(e) => e.stopPropagation()}
-                className="font-serif italic tracking-widest text-[13px] absolute min-w-2.5 bottom-20 px-7 border border-[#734f55] rounded-full text-[#734f55] hover:bg-[#734f55] hover:text-white transition duration-300 bg-transparent backdrop-blur-sm hover:scale-105
+                className="font-serif italic tracking-widest text-[13px] absolute min-w-2.5 bottom-20 px-7 border border-[#8b8070] rounded-full text-[#8b8070] hover:bg-[#8b8070] hover:text-white transition duration-300 bg-transparent backdrop-blur-sm hover:scale-105
 ">
                 Ver ubicación
             </a>

@@ -44,18 +44,21 @@ export default function Home() {
         <div className="relative z-10 flex flex-col items-center justify-center gap-16 py-24 w-full max-w-4xl">
 
           <FlipCard
-          frontImage="/images/A&I_INVITACION_RELIGIOSA.png"
-          backImage="/images/A&I_INVITACION_RELIGIOSA_2.png"
+            frontImage="/images/A&I_INVITACION_RELIGIOSA.png"
+            backImage="/images/A&I_INVITACION_RELIGIOSA_2.png"
+            locationUrl="https://share.google/qpwgn3tKamzoV5N5S"
           />
 
           <FlipCard
             frontImage="/images/A&I_INVITACION_CIVIL.png"
             backImage="/images/A&I_INVITACION_CIVIL_2.png"
+            locationUrl="https://share.google/gwv9PySHVIfOiHFIJ"
           />
 
           <FlipCard
             frontImage="/images/A&I_INVITACION_RECEPCION.png"
             backImage="/images/A&I_INVITACION_RECEPCION_2.png"
+            locationUrl="https://share.google/gwv9PySHVIfOiHFIJ"
           />
         </div>
 
