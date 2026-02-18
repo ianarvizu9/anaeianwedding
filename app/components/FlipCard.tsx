@@ -50,8 +50,7 @@ export default function FlipCard({ frontImage, backImage, locationUrl }: FlipCar
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={(e) => e.stopPropagation()}
-                className="font-serif italic tracking-widest text-[13px] absolute min-w-2.5 bottom-20 px-7 border border-[#8b8070] rounded-full text-[#8b8070] hover:bg-[#8b8070] hover:text-white transition duration-300 bg-transparent backdrop-blur-sm hover:scale-105
-">
+                className="font-serif italic tracking-widest text-[13px] absolute min-w-2.5 bottom-20 px-7 border border-[#8b8070] rounded-full text-[#8b8070] hover:bg-[#8b8070] hover:text-white transition duration-300 bg-transparent backdrop-blur-sm hover:scale-105">
                 Ver ubicación
             </a>
         </div>

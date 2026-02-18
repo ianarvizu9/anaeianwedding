@@ -26,7 +26,7 @@ export default function Home() {
       <div className="relative z-10 bg-transparent">
         <Image
           src="/images/A&I_INVITACION_PT2.png"
-          alt="Portada"
+          alt="anaeian"
           width={1200}
           height={800}
           className="w-full h-auto"
@@ -68,7 +68,7 @@ export default function Home() {
 
         <Image
           src="/images/A&I_INVITACION_PT4.png"
-          alt="Portada"
+          alt="detalles"
           width={1200}
           height={800}
           className="w-full h-auto"
@@ -77,11 +77,11 @@ export default function Home() {
           <a href="/" className="absolute inset-0 flex items-end justify-center">
             <Image
               src="/images/A&I_INVITACION_RSVP_2.png"
-              alt="Portada"
+              alt="reservacion"
               width={1200}
               height={800}
               className="w-full h-auto"
-            />
+              />
           </a>
         </div>
 
