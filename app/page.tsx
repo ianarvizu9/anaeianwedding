@@ -1,65 +1,82 @@
 import Image from "next/image";
+import "./styles/home.css";
+import FlipCard from "./components/FlipCard";
+import styles from "./styles/home.module.css";
+
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
+    <main className="min-h-screen flex flex-col items-center justify-center">
+      <div className="">
+          <Image
+            src="/images/A&I_INVITACION_PT1.png"
+            alt="Portada"
+            width={1200}
+            height={800}
+            className="w-full h-auto"
+          />
+      </div>
+      <div className="">
         <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
+          src="/images/A&I_INVITACION_PT2.png"
+          alt="Portada"
+          width={1200}
+          height={800}
+          className="w-full h-auto"
         />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+      </div>
+
+      <div className="relative w-full min-h-screen flex items-center justify-center">
+
+        {/* Fondo */}
+        <div
+          className="absolute inset-0 bg-center bg-no-repeat bg-cover"
+          style={{ backgroundImage: "url('/images/A&I_INVITACION_PT3.png')" }}
+        />
+
+        <div className="relative z-10 flex flex-col items-center justify-center gap-16 py-24 w-full max-w-4xl">
+
+          <FlipCard
+          frontImage="/images/A&I_INVITACION_RELIGIOSA.png"
+          backImage="/images/A&I_INVITACION_RELIGIOSA_2.png"
+          />
+
+          <FlipCard
+            frontImage="/images/A&I_INVITACION_CIVIL.png"
+            backImage="/images/A&I_INVITACION_CIVIL_2.png"
+          />
+
+          <FlipCard
+            frontImage="/images/A&I_INVITACION_RECEPCION.png"
+            backImage="/images/A&I_INVITACION_RECEPCION_2.png"
+          />
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+
+      </div>
+
+      <div className="relative w-full">
+
+        <Image
+          src="/images/A&I_INVITACION_PT4.png"
+          alt="Portada"
+          width={1200}
+          height={800}
+          className="w-full h-auto"
+        />
+        <div className="absolute inset-0 flex items-end justify-center">
+          <a href="/" className="absolute inset-0 flex items-end justify-center">
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+              src="/images/A&I_INVITACION_RSVP_2.png"
+              alt="Portada"
+              width={1200}
+              height={800}
+              className="w-full h-auto"
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
           </a>
         </div>
-      </main>
-    </div>
+
+      </div>
+
+    </main>
   );
 }

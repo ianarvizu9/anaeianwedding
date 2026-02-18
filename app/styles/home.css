@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+:root {
+    --left-main-color: #e0deda;
+    --right-main-color: #dcdbd7;
+}
+
+body {
+    background-image: linear-gradient(to right, var(--left-main-color), var(--right-main-color));
+}
+
+.button-container {
+    width: 180vh;
+    height: 1920px;
+}
