@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Ana E Ian Wedding Invitation",
   description: "A wedding invitation website for Ana and Ian's special day.",
+  icons: {
+    icon: '/favicon-ai.ico', // Ruta relativa a la carpeta public
+  },
 };
 
 export default function RootLayout({
