@@ -6,17 +6,24 @@ import styles from "./styles/home.module.css";
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center">
-      <div className="">
-          <Image
-            src="/images/A&I_INVITACION_PT1.png"
-            alt="Portada"
-            width={1200}
-            height={800}
-            className="w-full h-auto"
-          />
+    <main className="min-h-screen">
+
+      <div className="sticky top-0 min-h-[70vh] overflow-hidden z-0">
+        <div className="absolute top-0 w-full flex justify-center">
+          <div className="w-full max-w-md">
+            <Image
+              src="/images/A&I_INVITACION_PT1.png"
+              alt="Portada"
+              width={600}
+              height={1000}
+              className="w-full h-auto"
+              priority
+            />
+          </div>
+        </div>
       </div>
-      <div className="">
+
+      <div className="relative z-10 bg-transparent">
         <Image
           src="/images/A&I_INVITACION_PT2.png"
           alt="Portada"
