@@ -13,7 +13,7 @@ export default function FlipCard({ frontImage, backImage, locationUrl }: FlipCar
 
   return (
     <div
-      className="w-[90%] max-w-[500px] h-[300px] perspective cursor-pointer"
+      className="w-[90%] max-w-125 h-75 perspective cursor-pointer"
       onClick={() => setFlipped(!flipped)}
     >
       <div

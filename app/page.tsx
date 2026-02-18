@@ -58,7 +58,7 @@ export default function Home() {
           <FlipCard
             frontImage="/images/A&I_INVITACION_RECEPCION.png"
             backImage="/images/A&I_INVITACION_RECEPCION_2.png"
-            locationUrl="https://share.google/gwv9PySHVIfOiHFIJ"
+            locationUrl="https://maps.app.goo.gl/3GKA4ByznMnmcBQZ6?g_st=ic"
           />
         </div>
 
