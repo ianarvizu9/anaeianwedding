@@ -74,7 +74,7 @@ export default function Home() {
           className="w-full h-auto"
         />
         <div className="absolute inset-0 flex items-end justify-center">
-          <a href="/" className="absolute inset-0 flex items-end justify-center">
+          <a href="https://wa.me/526121698017" className="absolute inset-0 flex items-end justify-center">
             <Image
               src="/images/A&I_INVITACION_RSVP_2.png"
               alt="reservacion"
